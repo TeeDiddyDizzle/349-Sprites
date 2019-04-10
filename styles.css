@@ -27,6 +27,7 @@ h1{
 
 .bg{
     background-image: url('/freetileset/png/Object/Crate.png');
+    background-size: 100px 100px;
     width: 800px;
     height: 800px;
     margin-left: 0px;
