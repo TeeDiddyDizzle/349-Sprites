@@ -1,68 +1,24 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles.css">
-        <link href="https://fonts.googleapis.com/css?family=Germania+One" rel="stylesheet">
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
-        <script>
-            var btn = document.querySelector('button');
-
-            function random(number) {
-                return Math.floor(Math.random()*(number+1));
-            }
-
-            btn.onclick = function() {
-                var rndCol = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
-                document.body.style.backgroundColor = rndCol;
-            }
-        </script>
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <div class="topnav">
-            <header>
-                <h1>Welcome! Zombies Vs. Robots</h1>
-            </header>
+    <script src="main.js" charset="utf-8"></script>
+</head>
+<body>
+    <header>
+        <h1 class>Robot vs Zombie</h1>
+    </header>
+    <p class="Title">Instructions:</p>
+    <p class="Description"> Use W A S D to control the robot. Use arrow keys ↑ ⇆ ↓ to control the zombie.</p>
+    <div class="field">
+        <div class=bg>
+            <img class="robot" src="/robotfree/png/Idle.png"/>
+            <img class="zombie" src="/zombiefiles/png/male/Idle.png"/>
         </div>
-        <div class="field">
-            <div class="one"></div>
-            <div class="two"></div>
-            <div class="three"></div>
-            <div class="four"></div>
-            <div class="five"></div>
-            <div class="three-2"></div>
-            <div class="six"></div>
-
-            <div class="thirteen"></div>
-            <div class="fourteen"></div>
-            <div class="fifteen"></div>
-
-            <div class="thirteen-2"></div>
-            <div class="fourteen-2"></div>
-            <div class="fifteen-2"></div>
-            <div class="zombie"></div>
-            <div class="robot"></div>
-
-        </div>
-        <div class="bottomnav">
-            <div class="control-zombie">
-                <button type="button" class="button-up-zombie"></button>
-                <button type="button" class="button-down-zombie"></button>
-                <button type="button" class="button-left-zombie"></button>
-                <button type="button" class="button-right-zombie"></button>
-            </div>
-        </div>
-
-        <script src="" async defer></script>
-    </body>
+    </div>
+</body>
 </html>
